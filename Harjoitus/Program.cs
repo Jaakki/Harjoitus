@@ -66,12 +66,17 @@ namespace Harjoitus
             Console.WriteLine($"{pekka.name} kaveri on {pekka.friend.name}. {antti.name} kaveri on {antti.friend.name}.");
             Console.WriteLine();
 
+            Person per6 = new Person();
+            per6.name = "Jaakko";
+            per6.age = 23;
+
             List<string> Persons = new List<string>();
             Persons.Add(per1.name);
             Persons.Add(per2.name);
             Persons.Add(per3.name);
             Persons.Add(per4.name);
             Persons.Add(per5.name);
+            //Persons.Add(Console.ReadLine());
 
             List<int> Ages = new List<int>();
             Ages.Add(per1.age);
@@ -84,6 +89,8 @@ namespace Harjoitus
             {
                 Console.WriteLine(name);
             }
+
+            Console.WriteLine();
 
             int addedAges = 0;
             foreach (var age in Ages)
